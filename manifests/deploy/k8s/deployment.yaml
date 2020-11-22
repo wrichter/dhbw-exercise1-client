@@ -9,6 +9,7 @@ metadata:
     app.kubernetes.io/component: client
     app.kubernetes.io/instance: client
     app.kubernetes.io/part-of: dhbw-exercise-1
+    app.openshift.io/runtime: nodejs
   name: client
 spec:
   progressDeadlineSeconds: 600

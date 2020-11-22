@@ -25,12 +25,12 @@ spec:
     #     namespace: openshift
   output:
     to:
-      kind: DockerImage
-      name: replace/me/client:latest
-    pushSecret:
-      name: external-registry-dockercfg
-      # kind: ImageStreamTag
-      # name: client:latest
+    #   kind: DockerImage
+    #   name: replace/me/client:latest
+    # pushSecret:
+    #   name: external-registry-dockercfg
+      kind: ImageStreamTag
+      name: client:latest
   failedBuildsHistoryLimit: 5
   postCommit: {}
   resources: {}

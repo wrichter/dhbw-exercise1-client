@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"client:latest","namespace":"wrichter-dhbw-exercise-1"},"fieldPath":"spec.template.spec.containers[?(@.name==\"client\")].image","pause":"false"}]'
+    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"client:latest","namespace":"dhbw-exercise-1"},"fieldPath":"spec.template.spec.containers[?(@.name==\"client\")].image","pause":"false"}]'
   labels:
     app: client
     app.kubernetes.io/component: client

@@ -14,7 +14,7 @@ spec:
       uri: https://github.com/wrichter/dhbw-exercise1-client
       ref: main
     type: Git
-  strategy:
+  strategy: 
     type: Docker
     dockerStrategy: {}
     # type: Source

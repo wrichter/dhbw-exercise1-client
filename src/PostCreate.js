@@ -7,7 +7,7 @@ export default () => {
   const onSubmit = async event => {
     event.preventDefault();
 
-    await axios.post('http://localhost:4000/posts', {
+    await axios.post('http://posts-wrichter-dhbw-exercise-1.apps.osd-evalcluster.v0z2.p1.openshiftapps.com/posts', {
       title
     });
 

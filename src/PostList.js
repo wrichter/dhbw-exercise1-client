@@ -7,7 +7,7 @@ export default () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
-    const res = await axios.get('http://query-wrichter-dhbw-exercise-1.apps.osd-evalcluster.v0z2.p1.openshiftapps.com:4002/posts');
+    const res = await axios.get('http://query-wrichter-dhbw-exercise-1.apps.osd-evalcluster.v0z2.p1.openshiftapps.com/posts');
 
     setPosts(res.data);
   };

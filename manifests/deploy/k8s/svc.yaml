@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: client
+    app.kubernetes.io/component: client
+    app.kubernetes.io/instance: client
+    app.kubernetes.io/part-of: dhbw-exercise-1
+  name: client
+spec:
+  ports:
+  - name: 3000-tcp
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: client
+    deploymentconfig: client
+  sessionAffinity: None
+  type: ClusterIP

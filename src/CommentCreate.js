@@ -7,7 +7,7 @@ export default ({ postId }) => {
   const onSubmit = async event => {
     event.preventDefault();
 
-    await axios.post(`http://comments:4001/posts/${postId}/comments`, {
+    await axios.post(`http://comments-wrichter-dhbw-exercise-1.apps.osd-evalcluster.v0z2.p1.openshiftapps.com:4001/posts/${postId}/comments`, {
       content
     });
 

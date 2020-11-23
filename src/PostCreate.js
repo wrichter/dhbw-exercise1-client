@@ -7,7 +7,7 @@ export default () => {
   const onSubmit = async event => {
     event.preventDefault();
 
-    await axios.post('http://localhost:4000/posts', {
+    await axios.post('http://posts-dhbw-exercise-1.2886795283-80-kota02.environments.katacoda.com/posts', {
       title
     });
 

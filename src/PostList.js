@@ -7,7 +7,7 @@ export default () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
-    const res = await axios.get('http://localhost:4002/posts');
+    const res = await axios.get('http://query-dhbw-exercise-1.2886795283-80-kota02.environments.katacoda.com/posts');
 
     setPosts(res.data);
   };
